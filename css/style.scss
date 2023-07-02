@@ -1,0 +1,444 @@
+$header-height: 100px;
+$menu-width: 100px;
+$menu-spacing: 50px;
+$photo-height: 200px;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+header {
+  height: $header-height;
+  background-color: #172629;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  background-image: url('images/TLOU.png');
+  background-size: cover;
+.logo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  nav {
+    position: absolute;
+    top: 80%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    
+    ul {
+      list-style: none;
+      display: flex;
+      font-family: Aoboshi One;
+      text-decoration: none;  
+      justify-content: space-around;
+      
+      li {
+        margin: 0 $menu-spacing;
+
+        a {
+          color: #816219;
+          text-decoration: none;
+          font-size: 27px;
+          font-weight: lighter;
+          transition: all 0.3s ease;
+          justify-content: space-around;
+          &:hover {
+            color: rgb(45, 103, 110);
+            
+          }
+        }
+      }
+    }
+  }
+.photo {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $photo-height;
+    background-size: cover;
+    background-position: center;
+
+  }
+}
+h1{
+  color: #816219;
+  text-align: center;
+  font-weight: bold;
+  font-family: Aoboshi One;
+  letter-spacing: 0.1em;
+}
+p{
+  color: #816219;
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+  letter-spacing: 0.1em;
+  font-family: Aoboshi One;
+}
+.container
+{
+  background-image: url('images/thunder.jpg');
+  background-size: cover;
+  background-color: #000000;
+  height: 30vh;
+}
+.container1{
+  background-image: url("images/Works.png");
+  background-size: cover;
+  height: 55vh;
+}
+.photos
+{
+display: flex;
+justify-content: space-around;
+}
+
+.Services {
+background-image: url("/images/Services.png");
+background-size: cover;
+height: 100ch;
+}
+.serv > img
+{
+  margin: 3%;
+}
+.serv 
+{
+  display: flex;
+  place-items: center;
+  text-align: left;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.serv-text > p{
+  width: 100%;
+  font-size: medium;
+  text-align: left;
+  line-height: 4ch;
+}
+.container3
+{
+  display: grid;
+  place-items: center;
+}
+.soc-med
+{
+width: 11%;
+}
+.soc-med > p{
+  font-family: Asap;
+  font-size: x-small;
+  text-align: left;
+  
+}
+.address > p{
+  font-family: Asap;
+  font-size: medium;
+  text-align: right;
+  font-weight: 100;
+}
+.container4
+{
+  display: flex;
+  justify-content: space-between;
+}
+.we > p{
+  font-family: Asap;
+  font-size: medium;
+  font-weight: 300;
+  text-align: left;
+  
+}
+.masters{
+  background-image: url('/images/thunder.jpg');
+  background-size: cover;
+  height: 75ch;
+  
+}
+.text-sotr > p{
+  width: 100%;
+  text-align: left;
+  font-size: large;
+  
+}
+
+.list-text > p{
+  text-align: left;
+  font-size: large;
+  width: 98%;
+  
+ 
+}
+.List{
+  background-image: url("/images/Services.png");
+  background-size: cover;
+}
+.sotr {
+  display: flex;
+  justify-content: space-around;
+}
+.Sketches{
+  background-image: url('/images/thunder2.png');
+}
+.Training
+{
+  background-image: url('/images/thunder2.png');
+  height: 70ch;
+
+  
+}
+
+
+
+
+.Saoyoo{
+  background-image: url('/images/Group 14.png');
+ height: 160ch;
+ background-size: cover;
+}
+.Sa-text > p{
+  text-align: left;
+  width: 48%;
+  margin: 28%;
+}
+.Saytext {
+text-align: center;
+background-image: url('/images/Group\ 4.png');
+height: 85ch;
+}
+
+
+
+
+
+.Saytext > p{
+  text-align: left;
+  width: 55%;
+  margin-left: 37ch;
+} 
+.train > p
+{
+font-size: larger;
+text-align: left;
+margin-left: 30%;
+height: 10ch;
+word-spacing: 0.3em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Aoboshi One;
+}
+
+.recocrd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(#816219, #ff005d);
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 500px;
+}
+
+.form-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #152225;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.wrapper.animate-signUp .form-wrapper.sign-in {
+  transform: rotate(7deg);
+  animation: animateRotate .7s ease-in-out forwards;
+  animation-delay: .3s;
+}
+
+.wrapper.animate-signIn .form-wrapper.sign-in {
+  animation: animateSignIn 1.5s ease-in-out forwards;
+}
+
+@keyframes animateSignIn {
+  0% {
+      transform: translateX(0);
+  }
+
+  50% {
+      transform: translateX(-500px);
+  }
+
+  100% {
+      transform: translateX(0) rotate(7deg);
+  }
+}
+
+.wrapper .form-wrapper.sign-up {
+  transform: rotate(7deg);
+}
+
+.wrapper.animate-signIn .form-wrapper.sign-up {
+  animation: animateRotate .7s ease-in-out forwards;
+  animation-delay: .3s;
+}
+
+@keyframes animateRotate {
+  0% {
+      transform: rotate(7deg);
+  }
+
+  100% {
+      transform: rotate(0);
+      z-index: 1;
+  }
+}
+
+.wrapper.animate-signUp .form-wrapper.sign-up {
+  animation: animateSignUp 1.5s ease-in-out forwards;
+}
+
+@keyframes animateSignUp {
+  0% {
+      transform: translateX(0);
+      z-index: 1;
+  }
+
+  50% {
+      transform: translateX(500px);
+  }
+
+  100% {
+      transform: translateX(0) rotate(7deg);
+  }
+}
+
+h2 {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  width: 320px;
+  margin: 30px 0;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #ffffff;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-group input {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 0 10px;
+  background: transparent;
+  border: 1px solid #333;
+  outline: none;
+  border-radius: 17px;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+  top: 0;
+  font-size: 12px;
+  background: #000000;
+}
+.btn {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to right, #816219, #172629);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .4);
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 17px;
+  border: none;
+  outline: none;
+}
+
+.sign-link {
+  font-size: 14px;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.sign-link p {
+  color: #ffffff;
+}
+
+.sign-link p a {
+  color: #e91e63;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sign-link p a:hover {
+  text-decoration: underline;
+}
+.tr-text
+{
+font-size: x-large;
+margin-bottom: 25%;
+}
+
+.training-text
+{
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+.rec
+{
+  color: #816219;
+  background-color: #172629;
+  font-family: Asap;
+  font-size: larger;
+  font-weight: bolder;
+  width: 30ch;
+  height: 5ch;
+  border-radius: 1em;
+}
+.index1.php > body
+{
+  background-color: #816219;
+}
+.register_adm{
+  font-family: Aoboshi One;
+}
+.login_adm
+{
+  font-family: Aoboshi One;
+}
